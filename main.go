@@ -22,6 +22,6 @@ func getForm(c *gin.Context) {
 
 func main() {
 	router := gin.Default()
-	router.GET("/get", getForm)
+	router.GET("/", getForm)
 	router.Run("localhost:8080")
 }
